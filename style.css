@@ -447,24 +447,13 @@ h3 {
   button {
     margin-left: 10px;
   }
+  /* ==============About==================== */
   .container-aboutUs {
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  .p-about {
-    margin-top: 10px;
-    display: flex;
-    box-shadow: 0 5px 15px rgba(0, 0, 0.1);
-    align-items: center;
-    background-color: #fff;
-    height: 300px;
-    border-radius: 3%;
-    padding: 20px;
-    font-size: 10px;
-  }
+
   .img-container .popup-imag img {
     width: 95%;
   }
@@ -475,9 +464,34 @@ h3 {
   html {
     font-size: 55%;
   }
+  .container-navbar .navbar-a {
+    width: 20rem;
+    top: 52px;
+  }
+  .container-aboutUs {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-about img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0.1);
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    border: 10px solid #fff;
+    object-fit: cover; /* Opsional: Untuk menghindari distorsi pada gambar jika aspek rasio berbeda */
+    margin-right: 10px;
+    margin-left: -115px;
+    margin-bottom: 10px;
+  }
   .maps iframe {
     width: 280px;
     /* margin-left: 3px; */
+  }
+
+  .img-about {
+    width: 2px;
   }
 }
 
