@@ -1,22 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   background-color: #bebebe;
-
 }
 
 /*--------------------------------------navbar strat-----------------------------------------------------*/
-.container-navbar{
-  background: rgb(92,91,91);
-  background: linear-gradient(0deg, rgba(92,91,91,0.9193802521008403) 0%, rgba(4,4,0,0.9754026610644257) 83%);
+.container-navbar {
+  background: rgb(92, 91, 91);
+  background: linear-gradient(
+    0deg,
+    rgba(92, 91, 91, 0.9193802521008403) 0%,
+    rgba(4, 4, 0, 0.9754026610644257) 83%
+  );
   display: flex;
   justify-content: space-between;
   padding: 1.4rem 7%;
@@ -24,49 +27,48 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;  
+  z-index: 9999;
 }
 
-
-.container-navbar span{
+.container-navbar span {
   font-size: 2em;
   color: #fff;
 }
 
-.container-navbar .navbar-a a{
+.container-navbar .navbar-a a {
   color: rgb(219, 219, 219);
 
   display: inline-block;
   font-size: 1.5rem;
-  margin:10px;
+  margin: 10px;
   transition: all 0.3s ease-out;
   overflow: hidden;
 }
-.container-navbar .navbar-a a:hover{
+.container-navbar .navbar-a a:hover {
   color: #919191;
   transition: all 0.3s ease-in;
   border-radius: 5px;
 }
 
-.container-navbar .navbar-a a::after{
-    content: "";
-    display: block;
-    border-bottom: 0.1rem solid;
-    transform: scaleX(0);
-    transition: all 0.2s ease-in;
-  }
+.container-navbar .navbar-a a::after {
+  content: "";
+  display: block;
+  border-bottom: 0.1rem solid;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in;
+}
 
-.container-navbar .navbar-a a:hover::after{
-    transform: scaleX(0.5);
-    transition:all 0.2s ease-out  linier;
-  }
+.container-navbar .navbar-a a:hover::after {
+  transform: scaleX(0.5);
+  transition: all 0.2s ease-out;
+}
 
-.menu a{
-  color: #010A04;
+.menu a {
+  color: #010a04;
   margin: 0 0.5rem;
 }
 
-#hamburgerMneu{
+#hamburgerMneu {
   display: none;
 }
 /*--------------------------------------------------navbar end------------------------------------------------------------*/
@@ -75,7 +77,12 @@ body{
   height: 600px;
   display: flex;
   background-image: url("./img/hafizh-maryansyah-O_xYkjYxX9Y-unsplash.jpg");
-  background-color: rgba(49, 49, 49, 0.5); /* Ubah nilai alpha (0.5) sesuai kebutuhan */
+  background-color: rgba(
+    49,
+    49,
+    49,
+    0.5
+  ); /* Ubah nilai alpha (0.5) sesuai kebutuhan */
   background-blend-mode: multiply; /* Untuk mencampurkan warna latar belakang dengan gambar */
   background-attachment: fixed;
   background-size: cover;
@@ -104,7 +111,7 @@ body{
   line-height: 1.2;
 }
 .hero .content h1 span {
-  color: #4dd423;;
+  color: #4dd423;
 }
 .hero .content p {
   font-size: 1.6rem;
@@ -117,28 +124,33 @@ body{
   /* mix-blend-mode: difference; */
 }
 /* =================================Content========================================== */
-.container-conetent{
+.container-conetent {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 20px;
 }
-.container-conetent p{
+.container-conetent p {
   margin-top: 10px;
   text-align: justify;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
-.container-conetent h1{
+.container-conetent h1 {
   border-bottom: 2px solid black; /* Gaya dan warna garis bawah */
   padding-bottom: 10px;
 }
 
 /* =============================================== */
 
-.img-container{
+.img-container {
   background-image: url("./img/terakhir.jpg");
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.5); /* Ubah nilai alpha (0.5) sesuai kebutuhan */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Ubah nilai alpha (0.5) sesuai kebutuhan */
   background-blend-mode: multiply; /* Untuk mencampurkan warna latar belakang dengan gambar */
   display: flex;
   flex-wrap: wrap;
@@ -148,83 +160,84 @@ body{
   padding: 10px;
   overflow: hidden;
 }
-.img-container .image{
+.img-container .image {
   background-size: cover;
   height: 250px;
   width: 250px;
   border: 10px solid #fff;
-  box-shadow:0 5px 15px rgba(0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
 }
 
-.img-container .image img{
+.img-container .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
-.image:hover img{
+.image:hover img {
   transform: scaleX(1.1);
 }
 
-.img-container .popup-imag{
+.img-container .popup-imag {
   position: fixed;
-  top: 0; left: 0;
-  background: rgb(0,0,0, .9);
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.9);
   height: 100%;
   width: 100%;
   display: none;
   z-index: 10000000;
 }
 
-.img-container .popup-imag span{
+.img-container .popup-imag span {
   position: absolute;
-  top: 0;right: 0;
+  top: 0;
+  right: 0;
   font-size: 40px;
   font-weight: bolder;
   color: #fff;
-  cursor:pointer;
+  cursor: pointer;
   z-index: 1000;
-  
 }
 
-.img-container .popup-imag img{
+.img-container .popup-imag img {
   position: absolute;
-  top: 50%;left: 50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 5px solid #fff;
   border-radius: 5px;
   width: 750px;
   object-fit: cover;
- 
 }
 
 /* ==============contac====================================== */
-.maps{
+.maps {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.maps h1{
+.maps h1 {
   border-bottom: 2px solid black; /* Gaya dan warna garis bawah */
   padding-bottom: 10px;
 }
-.maps iframe{
+.maps iframe {
   margin-top: 10px;
   height: 200px;
 }
-.container-fome{
-  justify-content:center;
+.container-fome {
+  justify-content: center;
   display: flex;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
-form{
+form {
   margin-right: 10px;
   flex-direction: row;
 }
-form .input{
+form .input {
   display: flex;
   align-items: center;
   /* margin-top:1rem; */
@@ -236,20 +249,22 @@ form .input{
   height: 30%; */
 }
 
-form .input input{
-  margin-right:30px ;
+form .input input {
+  margin-right: 30px;
   width: 100%;
   margin-top: 5px;
-  
+
   padding: 2rem;
-  font-size: 1,7rem;
+  font-size: 1, 7rem;
   background: none;
 }
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   border: none;
   outline: none;
 }
-button{
+button {
   margin-top: 10px;
   padding: 1rem 3rem;
   font-size: 1.7rem;
@@ -257,7 +272,7 @@ button{
 }
 
 /* ================================Footer=================================================== */
-.containerFooter{
+.containerFooter {
   display: flex;
   margin-top: 50px;
   background-color: #303030;
@@ -267,23 +282,23 @@ button{
   padding: 20px;
   flex-direction: column;
 }
-h3{
+h3 {
   margin-bottom: 10px;
 }
 
 .p-footer p {
   text-align: center;
 }
-.icon{
+.icon {
   padding: 20px;
 }
-.icon a{
+.icon a {
   margin: 10px;
   text-decoration: none; /* Menghapus dekorasi tautan */
   color: inherit; /* Mewarisi warna teks dari elemen induk */
 }
 
-.copy{
+.copy {
   display: flex;
   background-color: #000000;
   color: white;
@@ -292,42 +307,41 @@ h3{
   height: 50px;
   text-decoration: none;
 }
-.copy  a{
+.copy a {
   text-decoration: none; /* Menghapus garis bawah pada tautan */
   color: rgb(45, 226, 45); /* Mewarisi warna teks dari elemen induk */
 }
-.footer-nav{
+.footer-nav {
   text-decoration: none; /* Menghapus dekorasi tautan */
   color: white; /* Mewarisi warna teks dari elemen induk */
-  font-size:1rem;
+  font-size: 1rem;
 }
 .footer-nav a {
   text-decoration: none; /* Menghapus dekorasi tautan */
   color: inherit; /* Mewarisi warna teks dari elemen induk */
   margin-right: 10px;
 }
-.footer-nav a:hover{
+.footer-nav a:hover {
   color: #767676;
   transition: all 0.3s ease-in;
   border-radius: 5px;
 }
 
-
 /* =====================================About Us================================= */
-.about-h1{
+.about-h1 {
   margin-top: 30px;
   display: flex;
   justify-content: center;
 }
 
-.container-aboutUs{
+.container-aboutUs {
   padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.img-about img{
-  box-shadow:0 5px 15px rgba(0,0,0.1);
+.img-about img {
+  box-shadow: 0 5px 15px rgba(0, 0, 0.1);
   height: 400px;
   width: 400px;
   border-radius: 400px;
@@ -336,9 +350,9 @@ h3{
   margin-right: 10px;
 }
 
-.p-about{
+.p-about {
   display: flex;
-  box-shadow:0 5px 15px rgba(0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0.1);
   align-items: center;
   background-color: #fff;
   height: 300px;
@@ -346,19 +360,10 @@ h3{
   padding: 20px;
 }
 
-.p-about p{
+.p-about p {
   text-align: justify;
-  font-size:0.9rem;
+  font-size: 0.9rem;
 }
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------responsif-----------------------------------------------*/
 /*=================================laptop==================================*/
@@ -375,26 +380,26 @@ h3{
   html {
     font-size: 62.5%;
   }
-/*#################### Navbar ##########################*/
-  #hamburgerMneu{
+  /*#################### Navbar ##########################*/
+  #hamburgerMneu {
     display: inline-block;
     color: #bebebe;
   }
-  .container-navbar .navbar-a{
+  .container-navbar .navbar-a {
     position: fixed;
-/*    top: 100%;*/
+    /*    top: 100%;*/
     top: 58px;
-    right:-300px;
-    background-color:#000000b7;
+    right: -300px;
+    background-color: #000000b7;
     width: 30rem;
     height: 100vh;
     transition: 0.5s;
   }
 
-  .container-navbar .navbar-a.active{
+  .container-navbar .navbar-a.active {
     right: 0;
   }
-  .container-navbar .navbar-a a{
+  .container-navbar .navbar-a a {
     color: rgb(255, 255, 255);
     display: block;
     margin: 1.5rem;
@@ -402,19 +407,19 @@ h3{
     font-size: 2rem;
   }
 
-  .container-navbar .navbar-a a::after{
+  .container-navbar .navbar-a a::after {
     transform-origin: 0 0;
   }
 
-  .container-navbar .navbar-a a:hover::after{
+  .container-navbar .navbar-a a:hover::after {
     transform: scaleX(0.2);
   }
 
-  .container-navbar .navbar-a a:hover{
+  .container-navbar .navbar-a a:hover {
     color: #919191;
     transition: all 0.3s ease-in;
   }
-  .container-navbar .navbar-a a::after{
+  .container-navbar .navbar-a a::after {
     content: "";
     display: block;
     border-bottom: 0.1rem solid #ffffff;
@@ -422,49 +427,37 @@ h3{
     transition: all 0.2s ease-in;
   }
 
-  .container-navbar .navbar-a a:hover::after{
+  .container-navbar .navbar-a a:hover::after {
     transform: scaleX(0.3);
-    transition:all 0.2s ease-out  linier;
+    transition: all 0.2s ease-out;
   }
-/*#################### Navbar ##########################*/
-/* .hero{
-  min-height: 120vh;
-  display: flex;
-  align-content: center;
-  background-image: url("./img/hero.jpg");
-  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-} */
-/* =================contan=========== */
-  .container-fome{
+  /*#################### Navbar ##########################*/
+  /* =================contan=========== */
+  .container-fome {
     display: flex;
     flex-direction: column;
-    
   }
-  .maps iframe{
+  .maps iframe {
     width: 430px;
     margin-left: 3px;
   }
-  form .input{
-    margin-left:10px
+  form .input {
+    margin-left: 10px;
   }
-  button{
-    margin-left:10px
+  button {
+    margin-left: 10px;
   }
-  .container-aboutUs{
+  .container-aboutUs {
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .p-about{
+  .p-about {
     margin-top: 10px;
     display: flex;
-    box-shadow:0 5px 15px rgba(0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0.1);
     align-items: center;
     background-color: #fff;
     height: 300px;
@@ -472,18 +465,28 @@ h3{
     padding: 20px;
     font-size: 10px;
   }
-
-
-/*=================================Tablet==================================*/
-/* ====================Gallery============================ */
-  .img-container .popup-imag img{
+  .img-container .popup-imag img {
     width: 95%;
-  };
-
+  }
+}
 
 /*hanphone*/
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+  .maps iframe {
+    width: 280px;
+    /* margin-left: 3px; */
+  }
+}
+
+@media (max-width: 250px) {
+  html {
+    font-size: 55%;
+  }
+  .maps iframe {
+    width: 200px;
+    /* margin-left: 3px; */
   }
 }
